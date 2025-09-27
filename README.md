@@ -49,7 +49,7 @@ Screenshots of successful installations are included in the [`snapshots/`](snaps
 
 ## 📒 Assignments
 
-* **Day 0**: Tool installation and GitHub setup
+* **Week 0**: Tool installation and GitHub setup
 * **Day 1**: RTL design and simulation
 * **Day 2**: Synthesis using Yosys
 * **Day 3**: Floorplanning and placement with OpenLANE
@@ -59,7 +59,7 @@ Screenshots of successful installations are included in the [`snapshots/`](snaps
 
 ## 📊 SoC Design Flow (RTL → GDSII)
 
-![SoC Flow](path-to-your-screenshot.png)
+![SoC Flow]
 *RTL design → Synthesis → Floorplanning → Placement → Routing → DRC/LVS → GDSII*
 
 ---
