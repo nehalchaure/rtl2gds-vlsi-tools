@@ -66,6 +66,7 @@ Screenshots of successful installations are included in the [`snapshots/`](snaps
 
 ## 🙌 Acknowledgements
 
+* [**Kunal Ghosh**](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/) sir for the great opportunity
 * **VSD SFAL Program** for guidance and structured flow
 * **OpenROAD & OpenLANE projects** for open-source EDA tools
 * Open-source community for continuous support
