@@ -39,3 +39,64 @@ module mux (
 );
     assign y = sel ? b : a;
 endmodule
+
+```
+## ▶️ Running Simulation
+```bash
+iverilog -o mux_tb mux.v tb_mux.v
+./mux_tb
+gtkwave mux.vcd
+```
+## 2️⃣ Synthesis with Yosys
+I synthesized the same 2:1 MUX into gate-level hardware using **Yosys** and the **Sky130 standard cell library**.  
+
+### 🔹 Yosys Script (`mux.ys`)
+```tcl
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog mux.v
+synth -top mux
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog mux_synth.v
+```
+
+### ▶️ Running Synthesis
+```bash
+yosys -s mux.ys
+```
+
+📄 **Result:** Yosys produced an optimized **gate-level netlist** (`mux_synth.v`) mapped to Sky130 cells.  
+
+---
+
+## 📝 Key Learnings & Takeaways
+- 🔁 Always **simulate before synthesis** to catch design issues early.  
+- 🛠 **iverilog + GTKWave** workflow is excellent for debugging.  
+- 📂 `.lib` files are **critical** for mapping RTL to real hardware cells.  
+- 📜 Yosys scripting makes synthesis **repeatable and automated**.  
+
+---
+
+## 🔮 Next Steps
+- 🔎 Study **sequential circuits** (flip-flops, registers).  
+- ⏱ Learn about **timing equations** (setup/hold checks).  
+- ➕ Practice with **larger designs** like adders & ALUs.  
+
+---
+
+## 📂 Repository Structure
+```bash
+├── mux.v              # 2:1 MUX design
+├── tb_mux.v           # Testbench
+├── mux.ys             # Yosys synthesis script
+├── mux_synth.v        # Synthesized netlist
+├── mux.vcd            # Simulation waveform (generated)
+└── README.md          # This report
+
+
+
+
+
+
+
