@@ -40,8 +40,9 @@ The **design** is your **Verilog code** describing the intended logic functional
 ### 🧪 Testbench
 A **testbench** is a **simulation environment** that applies various inputs to your design and checks whether the outputs are correct.
 
+---
 
-### 1️⃣ Simulation with Icarus Verilog
+## 1️⃣ Simulation with Icarus Verilog
 Simulation is the **first validation step**. I implemented a **2:1 multiplexer** in Verilog and tested it with a testbench.
 
 #### 🔹 2:1 MUX Design (`mux.v`)
@@ -54,12 +55,14 @@ module mux (
 endmodule
 
 ```
+
 ## ▶️ Running Simulation
 ```bash
 iverilog -o mux_tb mux.v tb_mux.v
 ./mux_tb
 gtkwave mux.vcd
 ```
+
 ## 2️⃣ Synthesis with Yosys
 I synthesized the same 2:1 MUX into gate-level hardware using **Yosys** and the **Sky130 standard cell library**.  
 
