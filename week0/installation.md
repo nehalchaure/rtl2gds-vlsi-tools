@@ -1,15 +1,15 @@
 # Week 0 – Tool Installation
 
 ### Tools Installed
-- Yosys ✅
-- Icarus Verilog ✅
-- GTKWave ✅
-- Ngspice ✅
-- Magic ✅
-- OpenLANE + Docker ✅
+- [Yosys](github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/yosys_installation.png) ✅
+- [Icarus Verilog](github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/iverilog_installation.png) ✅
+- [GTKWave](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/gtkwave_installation.png) ✅
+- [Ngspice](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/ngspice_installation.png) ✅
+- [Magic](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/magic_installation.png) ✅
+- [OpenLANE]() + [Docker](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/docker_installation.png) ✅
 
 ### Snapshots
-See images in this folder for tool installation proof.
+See images in [this folder](https://github.com/nehalchaure/rtl2gds-vlsi-tools/tree/main/week0) for tool installation proof.
 
 ### System Config
 - Ubuntu 20.04 (VirtualBox)
