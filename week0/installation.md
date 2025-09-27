@@ -1,8 +1,8 @@
 # Week 0 – Tool Installation
 
 ### Tools Installed
-- [Yosys](github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/yosys_installation.png) ✅
-- [Icarus Verilog](github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/iverilog_installation.png) ✅
+- [Yosys](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/yosys_installation.png) ✅
+- [Icarus Verilog](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/iverilog_installation.png) ✅
 - [GTKWave](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/gtkwave_installation.png) ✅
 - [Ngspice](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/ngspice_installation.png) ✅
 - [Magic](https://github.com/nehalchaure/rtl2gds-vlsi-tools/blob/main/week0/magic_installation.png) ✅
