@@ -28,6 +28,19 @@ This repository documents my learning journey in the **RTL Workshop**.
 
 ## 📚 Day 1 Learnings
 
+##  What is a Simulator, Design, and Testbench?
+
+### 🖥️ Simulator
+A **simulator** is a software tool that checks your digital circuit’s functionality by applying test inputs and observing outputs.  
+It helps you **verify your design before hardware implementation**.
+
+### 📝 Design
+The **design** is your **Verilog code** describing the intended logic functionality.
+
+### 🧪 Testbench
+A **testbench** is a **simulation environment** that applies various inputs to your design and checks whether the outputs are correct.
+
+
 ### 1️⃣ Simulation with Icarus Verilog
 Simulation is the **first validation step**. I implemented a **2:1 multiplexer** in Verilog and tested it with a testbench.
 
