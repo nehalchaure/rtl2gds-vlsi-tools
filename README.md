@@ -59,7 +59,7 @@ Screenshots of successful installations are included in the [`snapshots/`](snaps
 
 ## 📊 SoC Design Flow (RTL → GDSII)
 
-![SoC Flow]
+
 *RTL design → Synthesis → Floorplanning → Placement → Routing → DRC/LVS → GDSII*
 
 ---
