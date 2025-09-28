@@ -1,12 +1,12 @@
 # Lab: BabySoC — Functional Modelling
-**Lab name:** BabySoC Functional Modelling (Week 2.1)  
-**Date:** YYYY-MM-DD  <!-- replace with actual date -->  
-**Author:** Your Name (e.g., Nehal Chaure)
+**Lab name:** BabySoC Functional Modelling (Week 2)  
+**Date:** 2025-09-28  <!-- replace with actual date -->  
+
 
 ---
 
 ## 1. Aim
-To perform a complete functional modelling exercise of the BabySoC educational SoC: compile, simulate, view waveforms, capture evidence (VCD, screenshots, logs) and analyze clock/reset/dataflow. This verifies the functional correctness of BabySoC before any synthesis/layout steps.
+**To perform a complete functional modelling exercise of the BabySoC educational SoC: compile, simulate, view waveforms, capture evidence (VCD, screenshots, logs) and analyze clock/reset/dataflow. This verifies the functional correctness of BabySoC before any synthesis/layout steps.**
 
 ---
 
@@ -41,7 +41,7 @@ sudo apt install yosys -y
 After finishing this lab, this folder should look like:
 
 ```bash
-week2.1_babiesoc/
+week2_babiesoc/
 ├─ src/                  # Verilog source files you used
 ├─ vcd/                  # generated .vcd waveform files
 ├─ screenshots/          # GTKWave screenshots (reset, clock, dataflow)
