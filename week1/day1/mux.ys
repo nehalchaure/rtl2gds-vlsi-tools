@@ -1,8 +1,0 @@
-read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog mux.v
-synth -top mux
-dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
-abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
-show
-write_verilog mux_synth.v
-
