@@ -126,4 +126,53 @@ ls -lh vcd
 
 
 
+## 8. Results
+
+### Reset Behavior
+- Reset asserted at start, deasserted after 100 ns.  
+- Program counter initialized to 0.  
+
+### Clock Behavior
+- Clock toggles every 5 ns → period = 10 ns.  
+- Rising edges trigger state updates.  
+
+### Dataflow Behavior
+- PC increments sequentially.  
+- Memory reads observed.  
+- Write cycles show `mem_we` asserted.  
+
+---
+
+## 9. Discussion
+- Reset must be long enough for modules to initialize.  
+- Clock edges synchronize instruction fetch and memory ops.  
+- Dataflow between CPU, memory, and peripherals confirms correct integration.  
+- If `.vcd` missing → add `$dumpfile` + `$dumpvars` in TB.  
+- If modules missing → ensure all `.v` files compiled.  
+
+---
+
+## 10. Summary
+This lab demonstrated functional modelling of BabySoC:
+- Cloned source, compiled, and simulated.  
+- Observed reset, clock, and dataflow in GTKWave.  
+- Captured logs and waveforms for documentation.  
+
+---
+
+## 11. What I Learned
+- Managing multi-file Verilog simulation with Icarus.  
+- Writing/using testbenches to generate `.vcd`.  
+- Using GTKWave to inspect digital waveforms.  
+- Understanding reset, clock, and data dependencies in SoC.  
+- Storing structured deliverables in GitHub for traceability.  
+
+---
+
+## 12. Deliverables Checklist
+- [ ] `src/` → BabySoC Verilog source  
+- [ ] `vcd/` → waveform dumps  
+- [ ] `screenshots/` → reset, clock, dataflow  
+- [ ] `logs/` → sim logs  
+- [ ] `README.md` → this file  
 
