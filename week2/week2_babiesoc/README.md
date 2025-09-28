@@ -28,13 +28,7 @@
 - (Optional) Yosys — check: `yosys -V`  
 - Workspace (this repo): `~/rtl2gds-vlsi-tools/week2/week2.1_babiesoc`
 
-**Note:** If any tool is missing:
-```bash
-sudo apt update
-sudo apt install iverilog gtkwave git -y
-# optionally:
-sudo apt install yosys -y
-```
+
 
 ## 4. File / Folder Layout (expected)
 
