@@ -100,3 +100,30 @@ iverilog -o ../babiesoc_sim tb_babiesoc.v $(find . -name "*.v")
 # if tb_babiesoc.v is inside src and there are dependencies, the command above compiles all .v files
 
 ```
+
+### Step 5 - Run simulation and capture logs
+```bash
+# run simulator; capture both stdout and stderr
+cd ~/rtl2gds-vlsi-tools/week2/week2.1_babiesoc
+vvp babiesoc_sim &> logs/sim_full.log
+# check log
+tail -n 200 logs/sim_full.log
+
+```
+
+
+### Step 6 — Confirm .vcd (wave dump) exists
+Open the vcd folder:
+```bash
+
+ls -lh vcd || ls -lh *.vcd
+# If the testbench wrote tb_babiesoc.vcd or babysoc.vcd, move it into vcd/
+mv *.vcd vcd/ 2>/dev/null || true
+ls -lh vcd
+
+
+```
+
+
+
+
