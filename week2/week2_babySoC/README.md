@@ -65,12 +65,12 @@ iverilog -g2012 -o tb_minimal_tb avsddac.v avsdpll.v clk_gate.v tb_minimal.v
 After finishing this lab, this folder should look like:
 
 ```bash
-week2_babiesoc/
+week2_babySoC/
 ├─ src/                  # Verilog source files you used
 ├─ vcd/                  # generated .vcd waveform files
 ├─ screenshots/          # GTKWave screenshots (reset, clock, dataflow)
 ├─ logs/                 # sim logs, stdout/stderr captures
-├─ run_babiesoc.sh       # run script (provided below)
+├─ run_babySoC.sh       # run script (provided below)
 ├─ tb_run.v              # (if created) testbench file
 └─ README.md             # this file
 ```
@@ -99,10 +99,10 @@ mkdir -p src vcd screenshots logs
 
 ### Step 2 — Clone BabySoC Source
 ```bash
-git clone https://github.com/hemanthkumardm/SFAL-VSD-SoC-Journey.git temp_sf
+git clone https://github.com/hemanthkumardm/SFAL-VSD-SoC-Journey.git clone
 # locate the BabySoC project inside the cloned repo (folder name may vary)
 # use tab-complete or ls to find it, then copy .v files to src/
-cp temp_sf/*/*BabySoC*/*.v src/ 2>/dev/null || cp -r temp_sf/*/*/12.* src/ 2>/dev/null
+cp clone/*/*BabySoC*/*.v src/ 2>/dev/null || cp -r clone/*/*/12.* src/ 2>/dev/null
 # if the above doesn't copy, manually open the folder and copy the .v files into src/
 
 ```
