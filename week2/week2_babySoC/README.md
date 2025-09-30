@@ -2,7 +2,33 @@
 **Lab name:** BabySoC Functional Modelling (Week 2)  
 **Date:** 2025-09-28  <!-- replace with actual date -->  
 
+# A. VSDBabySoC Minimal Simulation
 
+This repository contains the RTL code for a minimal BabySoC including:
+
+- **DAC** (`avsddac.v`)
+- **PLL** (`avsdpll.v`)
+- **Clock gate** (`clk_gate.v`)
+
+A minimal testbench (`tb_minimal.v`) is provided to simulate these modules and generate waveforms.
+
+---
+
+## Prerequisites
+
+- Linux environment
+- [Icarus Verilog](http://iverilog.icarus.com/) (`iverilog`) installed
+- [GTKWave](http://gtkwave.sourceforge.net/) (`gtkwave`) installed for waveform viewing
+
+---
+
+## Run Minimal Simulation
+
+1. **Compile the RTL and testbench**
+
+```bash
+iverilog -g2012 -o tb_minimal_tb avsddac.v avsdpll.v clk_gate.v tb_minimal.v
+```
 ---
 
 ## 1. Aim
@@ -19,6 +45,10 @@
 - (Optional) Synthesize the design using **Yosys** and verify netlist equivalence with a testbench.
 
 ---
+
+
+
+
 
 ## 3. Tools & Environment
 - OS: Ubuntu (VirtualBox VM)  
