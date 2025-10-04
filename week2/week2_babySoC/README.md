@@ -3,6 +3,8 @@
 **Date:** 2025-09-28  <!-- replace with actual date -->  
 
 # A. VSDBabySoC Minimal Simulation
+<details>
+  <summary>click</summary>
 
 This repository contains the RTL code for a minimal BabySoC including:
 
@@ -37,6 +39,7 @@ iverilog -g2012 -o tb_minimal_tb avsddac.v avsdpll.v clk_gate.v tb_minimal.v
 ---
 
 ## 2. Objectives
+
 - Clone and inspect the BabySoC project source.  
 - Compile the design and its testbench using **Icarus Verilog (iverilog)**.  
 - Run simulation (`vvp`), generate `.vcd` waveform files.  
@@ -198,5 +201,13 @@ This lab demonstrated functional modelling of BabySoC:
 - [ ] `vcd/` → waveform dumps  
 - [ ] `screenshots/` → reset, clock, dataflow  
 - [ ] `logs/` → sim logs  
-- [ ] `README.md` → this file  
+- [ ] `README.md` → this file
+</details>
 
+
+# B. VSDBabySoC Complete Simulation
+
+<details>
+  <summary>click</summary>
+
+  </details>
