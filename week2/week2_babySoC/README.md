@@ -170,6 +170,8 @@ ls -lh vcd
 
 ---
 
+<img src="screenshots/week2.png" alt="BabySoC Week 2 Screenshot" width="1000"/>
+
 ## 9. Discussion
 - Reset must be long enough for modules to initialize.  
 - Clock edges synchronize instruction fetch and memory ops.  
